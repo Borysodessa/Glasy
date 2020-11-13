@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+}
+
+.item{
+list-style: none;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.body{
+  color: $color-main;
+  background-color: #849D8F;  /*========временно для зрения======*/
+  font-family: $main-font;
+  font-style: normal;
+}

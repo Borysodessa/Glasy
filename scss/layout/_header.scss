@@ -1,0 +1,90 @@
+.main-header {
+  padding-top: 9px;
+  padding-bottom: 135px;
+}
+
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 20px 18px 20px;
+  text-decoration: $text-decoration-color underline solid;
+  color: $color-main;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.13;
+}
+
+.logo {
+  position: relative;
+  padding: 0;
+}
+
+.search-user__wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 12px;
+}
+
+.header-form__icon{
+  margin-right: 10px;
+}
+
+.header-top__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6px;
+  padding-bottom: 10px;
+}
+
+.user-navigation__item{
+  position: relative;
+}
+
+.user-navigation__link {
+  padding: 8px 16px 8px 45px;
+  border-radius: 20px;
+  background-color: $text-decoration-color;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $color-main;
+}
+
+.user-navigation__login-icon{
+  position: absolute;
+  left: 16px;
+}
+
+.user-navigation__basket-icon{
+  position: absolute;
+  left: 16px;
+}
+
+.time-phone__wrap {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.work-time{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.88;
+  margin-bottom: 8px;
+}
+
+.header-phone{
+  color: $color-main;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 0.92;
+}
