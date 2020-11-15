@@ -40,11 +40,11 @@
 }
 
 .main-nav__link:hover + .catalog-submenu {
-  z-index: 5;
+  display: block;
 }
 
 .catalog-submenu:hover {
-  z-index: 5;
+  display: block;
 }
 
 .catalog-submenu {
@@ -54,7 +54,7 @@
   border-radius: 4px;
   width: 143px;
   height: 171px;
-  z-index: -10;
+  display: none;
   box-shadow: $shadow-catalog-submenu;
 
 
