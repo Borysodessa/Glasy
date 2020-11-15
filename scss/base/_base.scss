@@ -5,6 +5,8 @@
   padding: 0;
 }
 
+
+
 .item{
 list-style: none;
 }
@@ -18,4 +20,11 @@ list-style: none;
   background-color: #849D8F;  /*========временно для зрения======*/
   font-family: $main-font;
   font-style: normal;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
 }

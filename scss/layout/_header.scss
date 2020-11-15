@@ -1,6 +1,8 @@
 .main-header {
   padding-top: 9px;
   padding-bottom: 135px;
+  position: relative;
+  background-color: #c09c9f;
 }
 
 .main-nav__list {
@@ -18,9 +20,89 @@
   line-height: 1.13;
 }
 
-.logo {
+.main-nav__link:active {
+  box-shadow: $shadow-oval-btn
+}
+
+.main-nav__item {
+
   position: relative;
-  padding: 0;
+}
+
+.main-nav__link:not(.logo):hover {
+  margin-top: 14px;
+  margin-right: 2px;
+  margin-left: 2px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 20px;
+  background-color: $color-main;
+  color: $color-main-menu-hover;
+}
+
+.main-nav__link:hover + .catalog-submenu {
+  z-index: 5;
+}
+
+.catalog-submenu:hover {
+  z-index: 5;
+}
+
+.catalog-submenu {
+  position: absolute;
+  top: 55px;
+  background-color: $color-main;
+  border-radius: 4px;
+  width: 143px;
+  height: 171px;
+  z-index: -10;
+  box-shadow: $shadow-catalog-submenu;
+
+
+  &__title {
+    color: $color-main-black;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    padding: 13px 64px 13px 21px;
+    border-bottom: $color-border 1px solid;
+
+  }
+
+  &__link {
+    display: block;
+    color: $color-main-black;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 400;
+    padding-left: 21px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+  }
+
+  &__link:hover {
+    background-color: $color-submenu-hover;
+  }
+
+  & :last-child :hover {
+    border-radius: 0 0 4px 4px;
+    padding-bottom: 9px;
+  }
+
+  &__link:active {
+    background-color: $color-submenu-active;
+  }
+
+}
+
+.catalog-submenu::before {
+  position: absolute;
+  content: "";
+  top: -6px;
+  width: 100%;
+  height: 7px;
+  background-color: transparent;
+  z-index: 20;
+  display: block;
 }
 
 .search-user__wrap {
@@ -29,8 +111,71 @@
   padding-top: 12px;
 }
 
-.header-form__icon{
+.header-search__link{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: $text-decoration-color;
   margin-right: 10px;
+}
+
+.header-search{
+position: relative;
+}
+
+.header-search:hover path{
+  fill: $color-main-menu-hover;
+
+}
+
+.search-wrap_hover {
+  position: absolute;
+  top: 36px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px;
+  background-color: $color-main;
+  border-radius: 4px;
+  box-shadow: $shadow-catalog-submenu;
+  z-index: -1;
+}
+
+.search-wrap_hover:hover{
+z-index: 10;
+}
+
+.search-wrap_hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-color: transparent;
+  top: -15px;
+}
+
+.search-input {
+  width: 310px;
+  height: 44px;
+  border: $color-border 1px solid;
+  border-radius: 4px;
+  padding-left: 15px;
+}
+
+.header-search__link:hover + .search-wrap_hover{
+  z-index: 10;
+}
+
+.search-input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+
 }
 
 .header-top__wrap {
@@ -43,30 +188,97 @@
   justify-content: space-between;
   padding-top: 6px;
   padding-bottom: 10px;
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    padding: 8px 16px 8px 45px;
+    border-radius: 20px;
+    background-color: $text-decoration-color;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $color-main;
+  }
+
+  &__login-icon,
+  &__basket-icon {
+    position: absolute;
+    left: 16px;
+  }
 }
 
-.user-navigation__item{
-  position: relative;
+.user-navigation__link:hover path{
+fill: $color-main-black;
 }
 
-.user-navigation__link {
-  padding: 8px 16px 8px 45px;
-  border-radius: 20px;
-  background-color: $text-decoration-color;
-  margin-right: 10px;
+.user-navigation__link:hover{
+  color: $color-main-black;
+  background-color: $color-main;
+}
+
+.login-form{
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  width: 277px;
+  border-radius: 4px;
+  padding: 20px 17px 22px 19px;
+  border: $color-border 1px solid;
+  outline: none;
+  background-color: $background-header-login__form;
+  box-shadow : $shadow-login-form;
+  display: none;
+}
+
+.hover-login-link:hover + .login-form{
+  display: block;
+}
+
+.login-form:hover{
+  display: block;
+}
+
+.login-form::before{
+  position: absolute;
+  content: "";
+  top: -8px;
+  right: 0;
+  width: 100%;
+  height: 8px;
+  background-color: transparent;
+  display: block;
+}
+
+.login-input{
+  width: 100%;
+  height: 44px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: $border-login-input;
+}
+
+.login-input::placeholder{
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
-  color: $color-main;
+  padding-left: 15px;
 }
 
-.user-navigation__login-icon{
-  position: absolute;
-  left: 16px;
+.login-wrap{
+  display: flex;
+  justify-content: space-between;
 }
 
-.user-navigation__basket-icon{
-  position: absolute;
-  left: 16px;
+.login-btn{
+  width: 103px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 0.89;
+  border-radius: 26px;
 }
 
 .time-phone__wrap {
@@ -75,16 +287,25 @@
   flex-direction: column;
 }
 
-.work-time{
+.work-time {
   font-weight: 700;
   font-size: 14px;
   line-height: 0.88;
   margin-bottom: 8px;
 }
 
-.header-phone{
+.header-phone {
   color: $color-main;
   font-weight: 700;
   font-size: 22px;
   line-height: 0.92;
+}
+
+.login-link{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.15;
+  color: $color-main-black;
+  text-decoration: underline $text-decoration-color-black-link  solid;
+
 }

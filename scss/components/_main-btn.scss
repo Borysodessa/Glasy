@@ -1,0 +1,26 @@
+
+.main-btn{
+  color: $color-main;
+  text-shadow: $shadow-color-main-btn-hov-act;
+  background: linear-gradient(#F26843, #E74A35);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: $shadow-main-btn;
+}
+
+.main-btn:hover{
+  text-shadow: $shadow-color-main-btn-hov-act;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%,
+    #E74A35 100%);
+  box-shadow: 0 2px 2px #AC1000;
+}
+
+.main-btn:active{
+  text-shadow: $shadow-color-main-btn-hov-act;
+  box-shadow: $shadow-main-btn-active;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.07),
+    rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%,
+    #E74A35 100%);
+}
