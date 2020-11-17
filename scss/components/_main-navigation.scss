@@ -1,0 +1,37 @@
+/*=====главная навигация=======*/
+
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 20px 18px 20px;
+  text-decoration: $text-decoration-color underline solid;
+  color: $color-main;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.13;
+}
+
+
+
+
+.main-nav__link:active {
+  box-shadow: $shadow-oval-btn
+}
+
+.main-nav__item {
+  position: relative;
+}
+
+.main-nav__link:not(.logo):hover {
+  margin-top: 14px;
+  margin-right: 2px;
+  margin-left: 2px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 20px;
+  background-color: $color-main;
+  color: $color-main-menu-hover;
+}

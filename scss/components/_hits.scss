@@ -1,0 +1,28 @@
+.hits__list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.hits-card{
+  margin-right: 26px;
+  position: relative;
+}
+
+.hits-card:last-child{
+  margin-right: 0;
+}
+
+.hits__link{
+  display: block;
+  width: 267px;
+  text-align: center;
+}
+
+.hits__price::after{
+  position: absolute;
+  content: "m,ffjkfgfkkjmfdjd";
+  width: 340px;
+  height: 270px;
+  background-image: url("../images/hits/icon-hit.svg");
+  background-color: #c09c9f;
+}

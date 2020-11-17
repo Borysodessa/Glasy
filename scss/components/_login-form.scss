@@ -1,0 +1,75 @@
+
+/*====логин форма===*/
+
+.login-form{
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  width: 277px;
+  border-radius: 4px;
+  padding: 20px 17px 22px 19px;
+  border: $color-border 1px solid;
+  outline: none;
+  background-color: $background-header-login__form;
+  box-shadow : $shadow-login-form;
+  display: none;
+}
+
+.hover-login-link:hover + .login-form{
+  display: block;
+  z-index: 5;
+}
+
+.login-form:hover{
+  display: block;
+  z-index: 5;
+}
+
+.login-form::before{
+  position: absolute;
+  content: "";
+  top: -8px;
+  right: 0;
+  width: 100%;
+  height: 8px;
+  background-color: transparent;
+  display: block;
+}
+
+.login-input{
+  width: 100%;
+  height: 44px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: $border-login-input;
+}
+
+.login-input::placeholder{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  padding-left: 15px;
+}
+
+.login-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-btn{
+  width: 103px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 0.89;
+  border-radius: 26px;
+}
+
+.login-link{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.15;
+  color: $color-main-black;
+  text-decoration: underline $text-decoration-color-black-link  solid;
+
+}

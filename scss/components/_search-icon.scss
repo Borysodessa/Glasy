@@ -1,0 +1,28 @@
+/* ====== поиск ==== */
+
+.search-user__wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 12px;
+}
+
+.header-search__link{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: $text-decoration-color;
+  margin-right: 10px;
+}
+
+.header-search{
+  position: relative;
+}
+
+.header-search:hover path{
+  fill: $color-main-menu-hover;
+
+}

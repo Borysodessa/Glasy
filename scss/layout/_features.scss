@@ -1,0 +1,50 @@
+.features__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__wrap {
+  max-width: 560px;
+  background-color: $color-main-black;
+  border-radius: 16px;
+  padding: 16px 22px 16px 22px;
+  margin-bottom: 40px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  z-index: 1;
+
+  .features__title {
+    margin: 0 0 16px 0;
+    padding: 0;
+    font-size: 35px;
+    line-height: 1.17;
+    font-weight: 700;
+  }
+
+  .features__text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    margin-bottom: 42px;
+  }
+  .features__button{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 16px 22px 15px;
+    border-radius: 70px;
+    display: block;
+    margin-left: auto;
+  }
+}
+
+.raspberry-jam__wrap{
+  background-image: url("../images/features/background-raspbery.jpg");
+}
+
+.chocolate__wrap{
+  background-image: url("../images/features/background-chokolate.jpg");
+}
+
+
+

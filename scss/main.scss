@@ -3,5 +3,15 @@
 @import"./utils/visually-hidden.scss";
 @import"./layout/header.scss";
 @import"./utils/container.scss";
-@import"./components/components.scss";
+@import "./components/main-navigation";
+@import "components/logo";
 @import"./components/main-btn.scss";
+@import "./components/login-form";
+@import "./components/search-input";
+@import "./components/catalog-submenu";
+@import "./components/search-icon";
+@import "./components/user-navigation";
+@import "./layout/slider";
+@import "./components/slider-control";
+@import"./layout/features";
+@import "./components/hits";

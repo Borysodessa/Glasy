@@ -1,0 +1,30 @@
+
+
+.slider-control__list{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 63px;
+}
+
+.slider-control__button{
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: $color-main 2px solid;
+  margin-right: 8px;
+
+}
+
+.slider-control__button :first-child{
+  margin-right: 0;
+}
+
+.control__current{
+  background-color: white;
+}
+
+.slider-control__button:hover{
+  background-color: $background-slider-control-hover;
+}

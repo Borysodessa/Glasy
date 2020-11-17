@@ -1,0 +1,41 @@
+/*===== пользовательское навигация =====*/
+
+.user-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6px;
+  padding-bottom: 10px;
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    padding: 8px 16px 8px 45px;
+    border-radius: 20px;
+    background-color: $text-decoration-color;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $color-main;
+  }
+
+  &__login-icon,
+  &__basket-icon {
+    position: absolute;
+    left: 16px;
+  }
+}
+
+.user-navigation__link:last-child{
+margin: 0;
+}
+
+.user-navigation__link:hover path{
+  fill: $color-main-black;
+}
+
+.user-navigation__link:hover{
+  color: $color-main-black;
+  background-color: $color-main;
+}
