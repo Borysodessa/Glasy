@@ -1,18 +1,16 @@
 .search-wrap_hover {
   position: absolute;
+  display: none;
   top: 36px;
   right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 20px 15px;
   background-color: $color-main;
   border-radius: 4px;
   box-shadow: $shadow-catalog-submenu;
-  z-index: -1;
 }
 
 .search-wrap_hover:hover{
+  display: block;
   z-index: 10;
 }
 
@@ -21,8 +19,10 @@
   content: "";
   width: 100%;
   height: 15px;
+  left: 0;
+  top: -10px;
   background-color: transparent;
-  top: -15px;
+  z-index: 10;
 }
 
 .search-input {
@@ -34,6 +34,7 @@
 }
 
 .header-search__link:hover + .search-wrap_hover{
+  display: block;
   z-index: 10;
 }
 
@@ -41,5 +42,4 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
-
 }

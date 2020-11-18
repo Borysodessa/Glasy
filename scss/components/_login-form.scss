@@ -17,12 +17,12 @@
 
 .hover-login-link:hover + .login-form{
   display: block;
-  z-index: 5;
+  z-index: 20;
 }
 
 .login-form:hover{
   display: block;
-  z-index: 5;
+  z-index: 20;
 }
 
 .login-form::before{
