@@ -1,0 +1,49 @@
+.subscription{
+  max-width: 560px;
+
+  background-image: url("../images/subscription/post-background.png");
+  padding: 6px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.subscription__wrap{
+  background-color: $color-main;
+  border-radius: 16px;
+  padding-top: 27px;
+  padding-left: 20px;
+  padding-right: 16px;
+}
+
+.subscription__text{
+  color: $color-main-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.subscription__input{
+  width: 368px;
+  height: 44px;
+  border-radius: 6px;
+  outline: none;
+  margin-right: 5px;
+}
+
+.subscription__button{
+  height: 44px;
+  width: 130px;
+  border-radius: 70px;
+  margin-bottom: 35px;
+}
+
+.news-and-subscription{
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-and-subscription{
+  padding-bottom: 40px;
+}

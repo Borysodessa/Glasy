@@ -1,0 +1,27 @@
+.new-in-blog{
+  width: 540px;
+  border-radius: 16px;
+  background-color: $color-main;
+  padding-left: 20px;
+  padding-top: 23px;
+  padding-bottom: 0;
+  background-image: url("../images/new-in-blog/raspbery.png");
+  background-repeat: no-repeat;
+}
+
+.new-in-blog__title{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: $color-main-black;
+  margin-bottom: 15px;
+}
+
+.new-in-blog__link{
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: $color-main-black;
+  width: 287px;
+}

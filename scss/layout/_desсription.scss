@@ -1,3 +1,99 @@
 .description{
-  padding-top: 24px;
+  border-radius: 16px;
 }
+
+.description__article{
+  padding-top: 24px;
+  border-radius: 16px;
+  background-image: url("../images/description/wafer-background.jpg");
+  min-height: 306px;
+  padding-left:75px;
+  padding-right: 23px;
+  background-repeat: no-repeat;
+  background-color: $background-main-container;
+}
+
+.description__article_title{
+  color: $color-main-black;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 21px;
+}
+
+.description__text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+  color: $color-main-black;
+  margin-bottom: 33px;
+  max-width: 484px;
+}
+
+.description__list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-ice-cream::before{
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -56px;
+  width: 49px;
+  height: 49px;
+  background-image: url("../images/description/ice-cream.png");
+  background-repeat: no-repeat;
+  border: $color-main-black 1px solid;
+  border-radius: 50% ;
+  background-position: center;
+
+}
+
+.text-list::before{
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: -56px;
+  width: 49px;
+  height: 49px;
+  background-image: url("../images/description/list.png");
+  background-repeat: no-repeat;
+  border: $color-main-black 1px solid;
+  border-radius: 50% ;
+  background-position: center;
+}
+
+.text-cow::before{
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -56px;
+  width: 49px;
+  height: 49px;
+  background-image: url("../images/description/cow.png");
+  background-repeat: no-repeat;
+  border: $color-main-black 1px solid;
+  border-radius: 50% ;
+  background-position: center;
+}
+
+.text-delivery::before{
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: -56px;
+  width: 49px;
+  height: 49px;
+  background-image: url("../images/description/thermometer.png");
+  background-repeat: no-repeat;
+  border: $color-main-black 1px solid;
+  border-radius: 50% ;
+  background-position: center;
+}
+
+.description__item{
+  position: relative;
+}
+
+
