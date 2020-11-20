@@ -1,0 +1,18 @@
+.body-container{
+  background-color: $background-main-container;
+
+}
+
+
+.sublighting__wrap{
+  height: 716px;
+  width: 716px;
+  left: 242px;
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: 0;
+  outline: red 5px solid;
+  background: rgba(215, 242, 227, 0.75);
+  filter: blur(250px);
+}

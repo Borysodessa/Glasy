@@ -1,0 +1,75 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 27px 25px 29px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 18px;
+}
+
+.social__item {
+  margin-right: 12px;
+}
+
+.social__link:hover path {
+  fill-opacity: 1;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  position: relative;
+}
+
+.footer-wrap::before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -22px;
+  width: 15px;
+  height: 13px;
+  background-image: url("../images/footer/heart.svg");
+}
+
+.footer-wrap__link{
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.38;
+  color: $color-main;
+  margin-right: 31px;
+  text-decoration: $text-decoration-color underline solid;
+}
+
+.footer-wrap__link:hover,
+.footer-wrap__link:active{
+  color: $color-link-hover;
+  text-decoration: $color-link-hover underline solid;
+}
+
+.copyright__text{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-main;
+  margin-top: 18px ;
+}
+
+.copyright__link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-main;
+  margin-top: 18px ;
+  text-decoration: $text-decoration-color underline solid;
+}
+
+
+.copyright__link:hover,
+.copyright__link:active{
+  color: $color-link-hover;
+  text-decoration: $color-link-hover underline solid;
+}
