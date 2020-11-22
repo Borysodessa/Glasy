@@ -11,6 +11,8 @@
   padding-right: 23px;
   background-repeat: no-repeat;
   background-color: $background-main-container-first;
+  box-sizing: border-box;
+  margin-bottom: 40px;
 }
 
 .description__article_title{
@@ -34,6 +36,11 @@
   display: flex;
   justify-content: space-between;
 }
+
+.description__list:nth-child(3){
+  /*не работают чаилды*/
+}
+
 
 .text-ice-cream::before{
   content: "";
@@ -94,6 +101,10 @@
 
 .description__item{
   position: relative;
+}
+.text-list,
+.text-delivery{
+  margin-bottom: 0;
 }
 
 
