@@ -6,19 +6,20 @@
   padding-top: 32px;
   padding-left: 25px;
   position: absolute;
-  bottom: -1600px;
+  bottom: 150px;
   right: 127px;
+  z-index: 20;
 }
 
-.feedback::before{
-  position: absolute;
-  content: "";
-  width: 80px;
-  top: 140px;
-  left: -550px;
-  height: 140px;
-  background-image: url("../images/map/marker.svg");
-}
+//.feedback::before{
+// position: absolute;
+//  content: "";
+//  width: 80px;
+//  top: 25px;
+//  right: 433px;
+//  height: 140px;
+//  background-image: url("../images/map/marker.svg");
+//}
 
 
 .feedback__title{

@@ -17,14 +17,16 @@
 
 }
 
-.slider-control__button :first-child{
+.slider-control__list:last-child{
   margin-right: 0;
 }
 
 .control__current{
   background-color: white;
+
 }
 
 .slider-control__button:hover{
   background-color: $background-slider-control-hover;
+
 }

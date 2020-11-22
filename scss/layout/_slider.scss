@@ -1,6 +1,6 @@
 .slider__section{
   padding-top: 130px;
-
+  position: relative;
 }
 
 .slider__title{
@@ -28,39 +28,25 @@
 
 .slider__img_1{
 position: absolute;
-left: 350px;
-  top: 73px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top:-200px;
 }
 
 .slider__img_2{
   position: absolute;
-  top: 125px;
-  left: 670px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top:-200px;
 }
 
 .slider__img_3{
   position: absolute;
-  left: 350px;
-  top: 73px;
-}
-
-.slider__img_4{
-  position: absolute;
-  top: 125px;
-  left: 670px;
-}
-
-.slider__img_5{
-  position: absolute;
-  left: 350px;
-  top: 73px;
-
-}
-
-.slider__img_6{
-  position: absolute;
-  top: 125px;
-  left: 670px;
-
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top:-200px;
 }
 

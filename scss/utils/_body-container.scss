@@ -1,18 +1,61 @@
-.body-container{
-  background-color: $background-main-container;
-
+.body__container_first{
+  background-color: $background-main-container-first;
+  position: relative;
+  z-index: 20
 }
 
-
-.sublighting__wrap{
+.body__container_first::before{
+  content: "";
+  position: absolute;
   height: 716px;
   width: 716px;
-  left: 242px;
-  position: absolute;
   display: block;
   margin: 0 auto;
   top: 0;
-  outline: red 5px solid;
-  background: rgba(215, 242, 227, 0.75);
+  left: 0;
+  right: 0;
+  border: red 5px solid;
+  background-color: rgba(215, 242, 227, 0.75);
+  filter: blur(250px);
+
+}
+
+.body__container_second{
+  background-color: transparent;
+  position: relative;
+}
+
+.body__container_second::before{
+  content: "";
+  position: absolute;
+  height: 716px;
+  width: 716px;
+  display: block;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: red 5px solid;
+  background-color: rgba(218, 228, 239, 0.75);
+  filter: blur(250px);
+}
+
+.body__container_third{
+  background-color: transparent;
+  position: relative;
+}
+
+.body__container_third::before{
+  content: "";
+  position: absolute;
+  height: 716px;
+  width: 716px;
+  display: block;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: red 5px solid;
+  background-color: rgba(239, 224, 218, 0.75);
   filter: blur(250px);
 }
