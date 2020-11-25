@@ -9,7 +9,7 @@
   box-shadow: $shadow-catalog-submenu;
 }
 
-.search-wrap_hover:hover{
+.search-wrap_hover:hover {
   display: block;
   z-index: 10;
 }
@@ -33,7 +33,7 @@
   padding-left: 15px;
 }
 
-.header-search__link:hover + .search-wrap_hover{
+.header-search__link:hover + .search-wrap_hover {
   display: block;
   z-index: 10;
 }

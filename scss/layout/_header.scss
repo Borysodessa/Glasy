@@ -1,8 +1,6 @@
 .main-header {
   padding-top: 9px;
-  padding-bottom: 135px;
   position: relative;
-
   max-width: 1200px;
 }
 
@@ -11,12 +9,19 @@
   justify-content: space-between;
 }
 
+.logo-nav__wrap{
+  display: flex;
+  justify-content: flex-start;
+}
+
 /*=====раб время, телефон=====*/
 
 .time-phone__wrap {
+  position: absolute;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  right: 28px;
 }
 
 .work-time {

@@ -23,6 +23,7 @@
 .body__container_second{
   background-color: transparent;
   position: relative;
+  z-index: 2;
 }
 
 .body__container_second::before{

@@ -45,7 +45,6 @@ img {
 
 .main-header {
   padding-top: 9px;
-  padding-bottom: 135px;
   position: relative;
   max-width: 1200px;
 }
@@ -55,11 +54,18 @@ img {
   justify-content: space-between;
 }
 
+.logo-nav__wrap {
+  display: flex;
+  justify-content: flex-start;
+}
+
 /*=====раб время, телефон=====*/
 .time-phone__wrap {
+  position: absolute;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  right: 28px;
 }
 
 .work-time {
@@ -387,12 +393,12 @@ img {
 }
 
 .slider__section {
-  padding-top: 130px;
   position: relative;
+  outline: red 3px solid;
 }
 
 .slider__title {
-  position: relative;
+  position: absolute;
   max-width: 672px;
   font-weight: 700;
   font-size: 60px;
@@ -401,17 +407,23 @@ img {
   padding-bottom: 26px;
   text-align: center;
   z-index: 5;
+  left: 0;
+  right: 0;
+  top: 420px;
 }
 
 .buy-two__button {
-  position: relative;
+  position: absolute;
   display: block;
   margin: 0 auto 26px;
   font-size: 32px;
   line-height: 1.4;
   padding: 9px 23px;
-  border-radius: 70px;
+  border-radius: 50px;
   z-index: 5;
+  bottom: 50px;
+  left: 0;
+  right: 0;
 }
 
 .slider__img_1 {
@@ -419,7 +431,7 @@ img {
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: -200px;
+  bottom: 25px;
 }
 
 .slider__img_2 {
@@ -427,7 +439,7 @@ img {
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: -200px;
+  bottom: 25px;
 }
 
 .slider__img_3 {
@@ -435,7 +447,7 @@ img {
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: -200px;
+  bottom: 25px;
 }
 
 .slider-control__list {
@@ -452,6 +464,7 @@ img {
   border-radius: 50%;
   border: #ffffff 2px solid;
   margin-right: 8px;
+  outline: none;
 }
 
 .slider-control__list:last-child {
@@ -481,6 +494,7 @@ img {
   background-repeat: no-repeat;
   box-sizing: border-box;
   z-index: 1;
+  margin-top: -70px;
 }
 .features__wrap .features__title {
   margin: 0 0 16px 0;
@@ -762,6 +776,7 @@ img {
 .body__container_second {
   background-color: transparent;
   position: relative;
+  z-index: 2;
 }
 
 .body__container_second::before {
@@ -1089,6 +1104,61 @@ img {
   transform: rotate(-45deg);
   background-color: #323232;
   border: transparent 4px solid;
+}
+
+/* Слайдер */
+.slick-slider {
+  position: relative;
+}
+
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Лента слайдов */
+.slick-track {
+  height: 700px;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+.slick-arrow {
+  visibility: hidden;
+}
+
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+.slick-dots {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 120px;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin-right: 8px;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active {
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+  color: transparent;
+  background-color: transparent;
+  border: 2px #ffffff solid;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  outline: none;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,10 +1,9 @@
 .slider__section{
-  padding-top: 130px;
-  position: relative;
+  position: relative;outline: red 3px solid;
 }
 
 .slider__title{
-  position: relative;
+  position: absolute;
   max-width: 672px;
   font-weight: 700;
   font-size: 60px;
@@ -13,17 +12,23 @@
   padding-bottom: 26px;
   text-align: center;
   z-index: 5;
+  left: 0;
+  right: 0;
+  top: 420px;
 }
 
 .buy-two__button{
-  position: relative;
+  position: absolute;
   display: block;
   margin: 0 auto 26px;
   font-size: 32px;
   line-height: 1.4;
   padding: 9px 23px;
-  border-radius: 70px;
+  border-radius: 50px;
   z-index: 5;
+ bottom: 50px;
+  left: 0;
+  right: 0;
 }
 
 .slider__img_1{
@@ -31,7 +36,7 @@ position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
-  top:-200px;
+  bottom: 25px;
 }
 
 .slider__img_2{
@@ -39,7 +44,7 @@ position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
-  top:-200px;
+  bottom: 25px;
 }
 
 .slider__img_3{
@@ -47,6 +52,9 @@ position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
-  top:-200px;
+  bottom: 25px;
 }
+
+
+
 
