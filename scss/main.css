@@ -1185,7 +1185,7 @@ img {
 }
 
 @media (min-width: 1155px) {
-  .burger__list {
+  .burger-menu__wrap {
     display: none;
   }
 }
@@ -1261,7 +1261,7 @@ img {
     display: none;
   }
 
-  .burger__list {
+  .burger-menu__wrap {
     display: none;
   }
 }
@@ -1371,26 +1371,28 @@ img {
     text-align: center;
   }
 
-  .burger__list {
+  .burger-menu__wrap {
     display: none;
   }
 }
 @media (max-width: 767px) {
   .burger__wrap_left {
     display: block;
-    position: relative;
+    position: fixed;
     width: 27px;
     height: 20px;
     top: 18px;
+    z-index: 1000;
   }
 
   .burger__span_left {
     position: absolute;
     background-color: #ffffff;
-    height: 3px;
+    height: 2px;
     top: 9px;
     left: 0;
     width: 100%;
+    transition: all 0.2s ease 0s;
   }
 
   .burger__wrap_left::before,
@@ -1398,9 +1400,10 @@ img {
     content: "";
     position: absolute;
     width: 100%;
-    height: 3px;
+    height: 2px;
     background-color: #ffffff;
     left: 0;
+    transition: all 0.3s ease 0s;
   }
 
   .burger__wrap_left::before {
@@ -1411,6 +1414,20 @@ img {
     bottom: 0;
   }
 
+  .burger__span_left.active {
+    transform: scale(0);
+  }
+
+  .burger__wrap_left.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .burger__wrap_left.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
   .header-top__wrap {
     display: block;
   }
@@ -1419,11 +1436,35 @@ img {
     display: none;
   }
 
+  .burger__link {
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+
+  .burger__link_catalog {
+    padding-top: 24px;
+    padding-bottom: 12px;
+  }
+
+  .burger__link_about {
+    padding-top: 12px;
+    padding-bottom: 24px;
+  }
+
   .search-user__wrap {
     display: none;
   }
 
-  .burger__list {
+  .burger-menu__wrap {
+    display: block;
+    background-color: #8080803b;
+    max-width: 200px;
+    text-align: center;
+    top: -300px;
+    position: fixed;
+  }
+
+  .burger__list_left {
     display: block;
     background-color: #8080803b;
     max-width: 200px;
@@ -1435,22 +1476,23 @@ img {
     text-align: left;
   }
 
-  .header-search .header-search__link {
+  .burger-search__link {
     display: block;
-    padding-left: 30px;
-    padding-right: 170px;
-    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 160px;
+    padding-top: 12px;
+    padding-bottom: 4px;
     margin: 0;
     text-decoration: none;
     border-radius: 0;
     background-color: transparent;
   }
 
-  .header-search__link:hover {
+  .burger-search__link:hover {
     background-color: #ffffff;
   }
 
-  .header-search__link::after {
+  .burger-search__link::after {
     position: absolute;
     content: "Поиск";
     color: #ffffff;
@@ -1490,7 +1532,16 @@ img {
 
   .user-navigation__basket-icon,
 .user-navigation__login-icon {
-    left: 30px;
+    left: 40px;
+  }
+
+  .time-phone__wrap {
+    top: 40px;
+  }
+
+  .burger-menu__wrap.active {
+    top: 50px;
+    z-index: 1000;
   }
 }
 

@@ -26,3 +26,11 @@ $('.slider__list').slick({
   fade: true,
   cssEase: 'linear'
 });
+
+/*========burger=========*/
+
+$(document).ready(function () {
+  $('.burger__wrap_left').click(function(event) {
+    $('.burger__wrap_left,.burger__span_left,.burger-menu__wrap').toggleClass('active');
+  });
+});
