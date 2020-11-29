@@ -13,8 +13,8 @@
 }
 /* Слайд */
 .slick-slide{
-
-
+  position: relative;
+  outline: none;
 }
 /* Слайд активный (показывается) */
 .slick-slide.slick-active{}
@@ -28,7 +28,9 @@
 .slick-arrow{visibility: hidden}
 /* Стрелка влево */
 .slick-arrow.slick-prev{
+ position: absolute;
 }
+
 /* Стрелка вправо */
 .slick-arrow.slick-next{
   }
@@ -61,5 +63,4 @@
   height: 21px;
   border-radius: 50%;
   outline: none;
-
 }

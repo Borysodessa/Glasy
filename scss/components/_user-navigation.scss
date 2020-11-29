@@ -3,22 +3,14 @@
 .user-navigation {
   display: flex;
   justify-content: space-between;
-  padding-top: 6px;
-  padding-bottom: 10px;
+  align-items: center;
+  min-height: 62px;
 
   &__item {
     position: relative;
   }
 
-  &__link {
-    padding: 8px 16px 8px 45px;
-    border-radius: 20px;
-    background-color: $text-decoration-color;
-    margin-right: 10px;
-    font-size: 14px;
-    line-height: 1.14;
-    color: $color-main;
-  }
+
 
   &__login-icon,
   &__basket-icon {
@@ -26,7 +18,16 @@
     left: 16px;
   }
 }
-
+.user-navigation__link {
+  padding: 8px 16px 8px 45px;
+  border-radius: 20px;
+  background-color: $text-decoration-color;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $color-main;
+  transition-duration: .30000s;
+}
 .user-navigation__link:last-child{
 margin: 0;
 }

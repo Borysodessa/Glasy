@@ -1,0 +1,23 @@
+.time-phone__wrap {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.work-time {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.88;
+  margin-bottom: 8px;
+}
+
+.header-phone {
+  color: $color-main;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 0.92;
+}

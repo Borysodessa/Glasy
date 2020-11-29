@@ -2,40 +2,22 @@
   padding-top: 9px;
   position: relative;
   max-width: 1200px;
+  min-height: 62px;
 }
 
 .header-top__wrap {
   display: flex;
   justify-content: space-between;
+  min-height: 62px;
 }
 
 .logo-nav__wrap{
   display: flex;
   justify-content: flex-start;
+  min-height: 62px;
 }
 
-/*=====раб время, телефон=====*/
 
-.time-phone__wrap {
-  position: absolute;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  right: 28px;
-}
 
-.work-time {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 0.88;
-  margin-bottom: 8px;
-}
-
-.header-phone {
-  color: $color-main;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 0.92;
-}
 
 

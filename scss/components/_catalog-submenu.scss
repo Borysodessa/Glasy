@@ -3,6 +3,7 @@
 .main-nav__link:hover + .catalog-submenu {
   display: block;
   z-index: 20;
+  transition-duration: .3s;
 }
 
 .catalog-submenu:hover {

@@ -1,5 +1,5 @@
 .slider__section{
-  position: relative;outline: red 3px solid;
+  position: relative;
 }
 
 .slider__title{
@@ -26,17 +26,17 @@
   padding: 9px 23px;
   border-radius: 50px;
   z-index: 5;
- bottom: 50px;
+  bottom: 50px;
   left: 0;
   right: 0;
 }
 
 .slider__img_1{
-position: absolute;
+  position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
-  bottom: 25px;
+  top: 25px;
 }
 
 .slider__img_2{
@@ -44,7 +44,7 @@ position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
-  bottom: 25px;
+  top: 25px;
 }
 
 .slider__img_3{
@@ -52,7 +52,7 @@ position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
-  bottom: 25px;
+  top: 25px;
 }
 
 

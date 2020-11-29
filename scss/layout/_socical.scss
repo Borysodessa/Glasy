@@ -1,0 +1,12 @@
+.social__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__item {
+  margin-right: 12px;
+}
+
+.social__link:hover path {
+  fill-opacity: 1;
+}

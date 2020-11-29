@@ -1,19 +1,20 @@
 .subscription{
   max-width: 560px;
-
   background-image: url("../images/subscription/post-background.png");
   padding: 6px;
   border-radius: 16px;
   background-repeat: no-repeat;
   box-sizing: border-box;
+  margin: 0;
 }
 
 .subscription__wrap{
   background-color: $color-main;
   border-radius: 16px;
   padding-top: 27px;
-  padding-left: 20px;
-  padding-right: 16px;
+  padding-left: 18px;
+  padding-right: 18px;
+  box-sizing: border-box;
 }
 
 .subscription__text{
@@ -25,7 +26,7 @@
 }
 
 .subscription__input{
-  width: 368px;
+  max-width: 368px;
   height: 44px;
   border-radius: 6px;
   outline: none;
@@ -39,11 +40,6 @@
   margin-bottom: 35px;
 }
 
-.news-and-subscription{
-  display: flex;
-  justify-content: space-between;
-}
 
-.news-and-subscription{
-  padding-bottom: 40px;
-}
+
+

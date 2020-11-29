@@ -3,7 +3,7 @@
 .search-user__wrap {
   display: flex;
   justify-content: flex-end;
-  padding-top: 12px;
+  align-items: center;
 }
 
 .header-search__link{
@@ -16,6 +16,7 @@
   border-radius: 50%;
   background-color: $text-decoration-color;
   margin-right: 10px;
+
 }
 
 .header-search{

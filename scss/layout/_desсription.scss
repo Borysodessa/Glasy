@@ -1,5 +1,6 @@
 .description{
   border-radius: 16px;
+  margin-top: 16px;
 }
 
 .description__article{
@@ -7,12 +8,12 @@
   border-radius: 16px;
   background-image: url("../images/description/wafer-background.jpg");
   min-height: 306px;
-  padding-left:75px;
-  padding-right: 23px;
   background-repeat: no-repeat;
   background-color: $background-main-container-first;
   box-sizing: border-box;
   margin-bottom: 40px;
+  padding-right: 23px;
+  padding-left: 23px;
 }
 
 .description__article_title{
@@ -24,23 +25,25 @@
 }
 
 .description__text{
+  position: relative;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.38;
   color: $color-main-black;
   margin-bottom: 33px;
   max-width: 484px;
+  margin-left: 52px;
 }
 
 .description__list{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .description__list:nth-child(3){
   /*не работают чаилды*/
 }
-
 
 .text-ice-cream::before{
   content: "";
@@ -52,22 +55,21 @@
   background-image: url("../images/description/ice-cream.png");
   background-repeat: no-repeat;
   border: $color-main-black 1px solid;
-  border-radius: 50% ;
+  border-radius: 50%;
   background-position: center;
-
 }
 
 .text-list::before{
   content: "";
   position: absolute;
-  top: 90px;
+  top: -10px;
   left: -56px;
   width: 49px;
   height: 49px;
   background-image: url("../images/description/list.png");
   background-repeat: no-repeat;
   border: $color-main-black 1px solid;
-  border-radius: 50% ;
+  border-radius: 50%;
   background-position: center;
 }
 
@@ -81,27 +83,28 @@
   background-image: url("../images/description/cow.png");
   background-repeat: no-repeat;
   border: $color-main-black 1px solid;
-  border-radius: 50% ;
+  border-radius: 50%;
   background-position: center;
 }
 
 .text-delivery::before{
   content: "";
   position: absolute;
-  top: 90px;
+  top: -10px;
   left: -56px;
   width: 49px;
   height: 49px;
   background-image: url("../images/description/thermometer.png");
   background-repeat: no-repeat;
   border: $color-main-black 1px solid;
-  border-radius: 50% ;
+  border-radius: 50%;
   background-position: center;
 }
 
 .description__item{
   position: relative;
 }
+
 .text-list,
 .text-delivery{
   margin-bottom: 0;
