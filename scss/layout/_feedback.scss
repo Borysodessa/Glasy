@@ -1,34 +1,36 @@
-.feedback{
+.feedback {
   position: absolute;
-  height: 331px;
-  width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 300px;
   border-radius: 16px;
   background-color: $color-main;
-  padding-top: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 30px 25px 30px 25px;
   bottom: 50px;
   right: 80px;
   z-index: 20;
-  box-sizing: border-box;
 }
 
 .feedback__title{
-  width: 155px;
+  max-width: 155px;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.43;
   color: $color-main-black;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
+
 }
 
 .feedback__text{
-  width: 225px;
+  max-width: 225px;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.33;
   color: $color-main-black;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .feedback__title_phone{
@@ -37,6 +39,7 @@
   line-height: 1.43;
   color: $color-main-black;
   margin-bottom: 11px;
+
 }
 
 .feedback__link{
@@ -47,6 +50,7 @@
 }
 
 .feedback-work-time{
+  display: block;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.43;
