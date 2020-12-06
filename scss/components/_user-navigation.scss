@@ -10,14 +10,13 @@
     position: relative;
   }
 
-
-
   &__login-icon,
   &__basket-icon {
     position: absolute;
     left: 16px;
   }
 }
+
 .user-navigation__link {
   padding: 8px 16px 8px 45px;
   border-radius: 20px;

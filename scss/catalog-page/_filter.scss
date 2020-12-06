@@ -1,0 +1,217 @@
+
+/*====== filter title ======*/
+
+.filter-title{
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.17;
+  margin-bottom: 30px;
+}
+
+/*========sorting========*/
+
+.sorting__wrap{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 870px;
+
+}
+
+.select__wrap{
+  width: 196px;
+  background-color: $color-main;
+  height: 36px;
+  border-radius: 40px;
+}
+
+.sorting__select{
+  width: 180px;
+  height: 36px;
+  color: $color-main-black;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  background-color: $color-main;
+  padding: 8px 10px 10px 16px;
+  border-radius: 40px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.sorting__select:focus{
+  outline: none;
+}
+
+.sorting__option{
+  color: $color-main-black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  background-color: $color-main;
+}
+
+/*=====price-range====*/
+
+.price-range{
+  position: relative;
+  width: 218px;
+  height: 36px;
+  border-radius: 40px;
+  background-color: $background-filter-range;
+}
+
+.price-scale__wrap {
+  position: absolute;
+  width: 176px;
+  height: 2px;
+  top: 17px;
+  left: 15px;
+  background-color: $background-filter-scale;
+}
+
+.price-bar__wrap{
+  position: absolute;
+  width: 106px;
+  height: 2px;
+  background-color: $color-main;
+  margin-left: 21px;
+}
+
+.toggle{
+  position: absolute;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: $background-point-toggle;
+  border: $color-main 8px solid;
+}
+
+.toggle-min{
+  left: 35px;
+}
+
+.toggle-max{
+  left: 130px;
+}
+
+/*========fat contant=======*/
+
+.fat-content__list{
+  position: relative;
+  height: 36px;
+  width: 425px;
+  background-color: $background-filter-range;
+  border-radius: 20px;
+  padding-left: 14px;
+  padding-right: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.fat-content__input + .fat-content__label::before{
+  content:"";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: $background-filter-range;
+  border: $color-main  4px solid;
+  border-radius: 50%;
+  bottom: -4px;
+  left: 0;
+  cursor: pointer;
+}
+
+.fat-content__input:checked + .fat-content__label::after{
+  content:"";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: $color-main;
+  border-radius: 50%;
+  bottom: 5px;
+  left: 9px
+}
+
+.fat-content__label{
+  position: relative;
+  padding-left: 30px;
+}
+
+/*==========fillers======*/
+
+.fillers__list{
+  position: relative;
+  height: 36px;
+  width: 711px;
+  background-color: $background-filter-range;
+  border-radius: 20px;
+  padding-left: 14px;
+  padding-right: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.fillers__input + .fillers__label::before{
+  content:"";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: -1px;
+  left: 5px;
+  background-image: url("../images/filter/marker-reg.svg");
+}
+
+.fillers__input:checked + .fillers__label::before{
+  content:"";
+  position: absolute;
+  width: 24px;
+  height: 20px;
+  bottom: -2px;
+  left: 5px;
+  background-image: url("../images/filter/marker.svg");
+
+}
+
+.fillers__label{
+  position: relative;
+  padding-left: 33px;
+}
+
+/*===========sorting button=========*/
+
+.sorting__button{
+  height: 36px;
+  width: 144px;
+  border-radius: 40px;
+  border: $color-main 2px solid;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  color: $color-main;
+  background-color: $background-filter-range;
+  margin-top: 25px;
+}
+
+.sorting__fieldset,
+.price__fieldset,
+.fat__fieldset,
+.fillers__fieldset{
+  border: none;
+  padding: 0;
+  margin-bottom: 11px;
+}
+
+.legend{
+  display: block;
+  margin-bottom: 7px;
+  margin-top: 11px;
+}
+
+

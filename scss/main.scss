@@ -11,6 +11,7 @@
 @import "./components/catalog-submenu";
 @import "./components/search-icon";
 @import "./components/user-navigation";
+@import "./layout/time-phone__wrap";
 @import "./layout/slider";
 @import "./components/slider-control";
 @import"./layout/features";
@@ -24,6 +25,9 @@
 @import "./layout/socical";
 @import "./components/modal";
 @import "./layout/slick.scss";
-@import "./layout/time-phone__wrap.scss";
 @import "media/media";
 @import "./components/burger";
+@import "./catalog-page/catalog-header";
+@import "./catalog-page/catalog-basket__form";
+@import "catalog-page/bread-crumbs__section";
+@import "./catalog-page/filter";

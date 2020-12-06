@@ -1,0 +1,145 @@
+
+
+
+.catalog-basket__form{
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  width: 485px;
+  height: 200px;
+  background-color: $color-main;
+  padding: 20px 14px 21px 40px;
+  border-radius: 4px;
+}
+
+.purchased__list{
+  border-bottom: $border-color-catalog-form 1px solid;
+  margin-bottom: 23px;
+}
+
+.purchased__item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+
+.purchased__img{
+  width: 33px;
+  height: 33px;
+  margin-right: 13px;
+}
+
+.purchased__text_orange::before{
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 15px;
+  left: -70px;
+  top: 7px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.purchased__text_orange::after{
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 15px;
+  left: -70px;
+  top: 7px;
+  background-color: black;
+  transform: rotate(-45deg);
+}
+
+.purchased__text_strawberry::before{
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 15px;
+  left: -70px;
+  top: 13px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.purchased__text_strawberry::after{
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 15px;
+  left: -70px;
+  top: 13px;
+  background-color: black;
+  transform: rotate(-45deg);
+}
+
+.purchased__text{
+  position: relative;
+  max-width: 216px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.23;
+  color: $color-main-black;
+  margin-right: 31px;
+}
+
+.purchased__text_quantity{
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.23;
+  color: $color-catalog-form;
+  margin-right: 26px;
+}
+
+.basket-item-price__span{
+  color: $col-catalog-span;
+}
+
+.purchased-price__span{
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.23;
+  color: $color-main-black;
+  margin-right: 20px;
+}
+
+.purchased-total__text{
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.06px;
+  color: $color-main-black;
+  text-align: right;
+}
+
+.purchased-btn{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+  padding: 13px 15px;
+  border-radius: 32px;
+  position: absolute;
+  right: 14px;
+  top: 175px;
+}
+
+
+.catalog-user-nav__link:hover + .catalog-basket__form{
+  display: block;
+  z-index: 10;
+}
+
+.catalog-basket__form:hover{
+  display: block;
+}
+
+.catalog-basket__form::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-color: transparent;
+  z-index: 15;
+  top: -10px;
+}

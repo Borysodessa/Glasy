@@ -1,0 +1,17 @@
+.catalog-main-nav-link:hover{
+  background-color: $background-catalog-link;
+}
+
+/*---------корзина в каталоге -------*/
+.catalog__basket-icon{
+  position: absolute;
+  left: 16px;
+}
+
+.catalog-user-nav__link:hover .catalog-basket__path {
+  fill: $background-catalog-link;
+}
+
+.catalog__basket-icon:hover .catalog-basket__path{
+  fill: $background-catalog-link;
+}

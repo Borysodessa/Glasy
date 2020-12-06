@@ -1,0 +1,23 @@
+.bread-crumbs__link {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $color-main;
+  text-decoration: $text-decoration-color underline solid;
+  margin-right: 22px;
+}
+
+.bread-crumbs__link::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-image: url("../images/bread-crambs/bread-crambs.svg");
+  top: 6px;
+  right: -17px;
+}
+
+.bread-crumbs__link:last-child::after{
+  display: none;
+}
