@@ -3,6 +3,7 @@
 /*======== body container==========*/
 /*=============catalog basket form =======*/
 /*==============filter===========*/
+/*============ catalog footer =========*/
 *,
 *::before,
 *::after {
@@ -30,6 +31,10 @@
 img {
   max-width: 100%;
   height: auto;
+}
+
+.main {
+  position: relative;
 }
 
 .visually-hidden {
@@ -595,7 +600,7 @@ img {
 
 .hits__link {
   display: block;
-  width: 267px;
+  width: 260px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -2122,6 +2127,34 @@ img {
   display: block;
   margin-bottom: 7px;
   margin-top: 11px;
+}
+
+.filter {
+  margin-bottom: 34px;
+}
+
+.catalog-card {
+  margin-bottom: 40px;
+}
+
+.catalog-pagination__section {
+  width: 300px;
+  position: absolute;
+  right: 150px;
+  bottom: 120px;
+}
+
+.pagination__link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.11px;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.catalog-footer {
+  border-top: rgba(255, 255, 255, 0.2) 1px solid;
 }
 
 /*# sourceMappingURL=main.css.map */
