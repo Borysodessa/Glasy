@@ -55,14 +55,20 @@
 
 .hits__link{
   display: block;
-  width: 260px;
+  width: 245px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.38;
   color: $color-main;
   text-decoration: $text-decoration-color underline solid;
+  margin: 0 auto;
+}
 
+.hits__link:hover,
+.hits__link:active {
+  color: $hits-link-hover;
+  text-decoration: $hits-link-hover-decoradion solid underline;
 }
 
 .hits__button{

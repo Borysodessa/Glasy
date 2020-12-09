@@ -35,6 +35,14 @@
   padding-left: 15px;
 }
 
+.search-input:hover{
+  border: $color-border-hover 1px solid;
+}
+
+.search-input:focus{
+  border:  1px solid $color-border-focus; /* не делается другим цветом фокус*/
+}
+
 .header-search__link:hover + .search-wrap_hover {
   display: block;
   z-index: 10;

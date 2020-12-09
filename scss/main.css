@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*--------search------*/
 /*====== hits ========*/
 /*======== body container==========*/
 /*=============catalog basket form =======*/
@@ -245,6 +246,15 @@ img {
   border: rgba(50, 50, 50, 0.2) 1px solid;
   border-radius: 4px;
   padding-left: 15px;
+}
+
+.search-input:hover {
+  border: rgba(50, 50, 50, 0.5) 1px solid;
+}
+
+.search-input:focus {
+  border: 1px solid rgba(46, 136, 228, 0.52);
+  /* не делается другим цветом фокус*/
 }
 
 .header-search__link:hover + .search-wrap_hover {
@@ -600,13 +610,20 @@ img {
 
 .hits__link {
   display: block;
-  width: 260px;
+  width: 245px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.38;
   color: #ffffff;
   text-decoration: rgba(255, 255, 255, 0.3) underline solid;
+  margin: 0 auto;
+}
+
+.hits__link:hover,
+.hits__link:active {
+  color: #FFBC9E;
+  text-decoration: rgba(255, 188, 158, 0.5) solid underline;
 }
 
 .hits__button {
@@ -1938,21 +1955,14 @@ img {
   width: 870px;
 }
 
-.select__wrap {
-  width: 196px;
-  background-color: #ffffff;
-  height: 36px;
-  border-radius: 40px;
-}
-
 .sorting__select {
-  width: 180px;
+  width: 196px;
   height: 36px;
-  color: #323232;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.13;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 8px 10px 10px 16px;
   border-radius: 40px;
   box-sizing: border-box;
@@ -1961,6 +1971,8 @@ img {
 
 .sorting__select:focus {
   outline: none;
+  background-color: #ffffff;
+  color: #323232;
 }
 
 .sorting__option {
@@ -2015,7 +2027,11 @@ img {
   left: 130px;
 }
 
-/*========fat contant=======*/
+.toggle:hover {
+  border: #ffffff 9px solid;
+}
+
+/*========fat content=======*/
 .fat-content__list {
   position: relative;
   height: 36px;
@@ -2036,11 +2052,19 @@ img {
   width: 18px;
   height: 18px;
   background-color: rgba(255, 255, 255, 0.2);
-  border: #ffffff 4px solid;
+  border: rgba(255, 255, 255, 0.5) 4px solid;
   border-radius: 50%;
   bottom: -4px;
   left: 0;
   cursor: pointer;
+}
+
+.fat-content__input:hover + .fat-content__label::before {
+  border: #ffffff 4px solid;
+}
+
+.fat-content__input:disabled + .fat-content__label::before {
+  border: rgba(255, 255, 255, 0.2) 4px solid;
 }
 
 .fat-content__input:checked + .fat-content__label::after {
@@ -2048,10 +2072,14 @@ img {
   position: absolute;
   width: 8px;
   height: 8px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   bottom: 5px;
   left: 9px;
+}
+
+.fat-content__input:checked:hover + .fat-content__label::after {
+  background-color: #ffffff;
 }
 
 .fat-content__label {
@@ -2114,6 +2142,12 @@ img {
   margin-top: 25px;
 }
 
+.sorting__button:active,
+.sorting__button:hover {
+  background-color: #ffffff;
+  color: #323232;
+}
+
 .sorting__fieldset,
 .price__fieldset,
 .fat__fieldset,
@@ -2140,8 +2174,8 @@ img {
 .catalog-pagination__section {
   width: 300px;
   position: absolute;
-  right: 150px;
-  bottom: 120px;
+  right: 60px;
+  bottom: 140px;
 }
 
 .pagination__link {
@@ -2149,12 +2183,35 @@ img {
   font-weight: 500;
   line-height: 1.11px;
   color: #ffffff;
-  padding-left: 10px;
-  padding-right: 20px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 50%;
+}
+
+.pagination__link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination__link:active {
+  background-color: #ffffff;
+  color: #323232;
+}
+
+.pagination__link:hover:last-child,
+.pagination__link:hover:first-child {
+  background-color: transparent;
+}
+
+.pagination-disabled {
+  background-color: #ffffff;
+  color: #323232;
 }
 
 .catalog-footer {
   border-top: rgba(255, 255, 255, 0.2) 1px solid;
+}
+
+.catalog-card__section {
+  padding-bottom: 96px;
 }
 
 /*# sourceMappingURL=main.css.map */

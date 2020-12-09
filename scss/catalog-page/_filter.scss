@@ -18,21 +18,14 @@
 
 }
 
-.select__wrap{
-  width: 196px;
-  background-color: $color-main;
-  height: 36px;
-  border-radius: 40px;
-}
-
 .sorting__select{
-  width: 180px;
+  width: 196px;
   height: 36px;
-  color: $color-main-black;
+  color: $color-main;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.13;
-  background-color: $color-main;
+  background-color: $background-filter-range;
   padding: 8px 10px 10px 16px;
   border-radius: 40px;
   box-sizing: border-box;
@@ -41,6 +34,8 @@
 
 .sorting__select:focus{
   outline: none;
+  background-color: $color-main;
+  color: $color-main-black;
 }
 
 .sorting__option{
@@ -96,7 +91,11 @@
   left: 130px;
 }
 
-/*========fat contant=======*/
+.toggle:hover{
+  border: $color-main 9px solid;
+}
+
+/*========fat content=======*/
 
 .fat-content__list{
   position: relative;
@@ -118,11 +117,19 @@
   width: 18px;
   height: 18px;
   background-color: $background-filter-range;
-  border: $color-main  4px solid;
+  border: $background-filter-scale  4px solid;
   border-radius: 50%;
   bottom: -4px;
   left: 0;
   cursor: pointer;
+}
+
+.fat-content__input:hover + .fat-content__label::before{
+ border: $color-main  4px solid;
+}
+
+.fat-content__input:disabled + .fat-content__label::before{
+  border: $background-filter-range  4px solid;
 }
 
 .fat-content__input:checked + .fat-content__label::after{
@@ -130,10 +137,14 @@
   position: absolute;
   width: 8px;
   height: 8px;
-  background-color: $color-main;
+  background-color: $background-filter-scale;
   border-radius: 50%;
   bottom: 5px;
   left: 9px
+}
+
+.fat-content__input:checked:hover + .fat-content__label::after{
+  background-color: $color-main;
 }
 
 .fat-content__label{
@@ -198,6 +209,12 @@
   background-color: $background-filter-range;
   margin-top: 25px;
 }
+.sorting__button:active,
+.sorting__button:hover{
+  background-color: $color-main;
+  color: $color-main-black;
+}
+
 
 .sorting__fieldset,
 .price__fieldset,

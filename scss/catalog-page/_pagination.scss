@@ -1,8 +1,9 @@
 .catalog-pagination__section{
   width: 300px;
   position: absolute;
-  right: 150px;
-  bottom: 120px;
+  right: 60px;
+  bottom: 140px;
+
 }
 
 .pagination__link{
@@ -10,6 +11,24 @@
   font-weight: 500;
   line-height: 1.11px;
   color: $color-main;
-  padding-left: 10px;
-  padding-right: 20px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 50%;
+}
+.pagination__link:hover{
+  background-color:$border-catalog-footer ;
+}
+
+.pagination__link:active{
+  background-color:$color-main;
+  color: $color-main-black;
+}
+
+.pagination__link:hover:last-child,
+.pagination__link:hover:first-child{
+  background-color: transparent;
+}
+
+.pagination-disabled{
+  background-color: $color-main;
+  color: $color-main-black;
 }
