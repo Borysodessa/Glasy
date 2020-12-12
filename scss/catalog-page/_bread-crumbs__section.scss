@@ -8,7 +8,13 @@
   margin-right: 22px;
 }
 
-.bread-crumbs__link::after {
+.bread-crumbs__link:hover,
+.bread-crumbs__link:active{
+  color: $hits-link-hover;
+  text-decoration: $hits-link-hover-decoradion solid underline;
+}
+
+ .bread-crumbs__link::after {
   position: absolute;
   content: "";
   width: 6px;

@@ -11,8 +11,126 @@
 <body class="body">
 <header class="main-header container catalog-main-header__wrap">
   <div class="container">
-    <h1 class="visually-hidden">Магазин морженного Глейси</h1>
+    <h1 class="visually-hidden">Магазин морженного Глейси каталог</h1>
     <div class="header-top__wrap">
+
+      <!-- burger button-->
+
+      <div class="burger__wrap_left">
+        <span class="burger__span_left"></span>
+      </div>
+
+      <!--burger menu-->
+
+      <div class="burger-menu__wrap">
+        <nav class="burger__nav">
+          <ul class="burger__list_left">
+            <li class="burger__item item">
+              <a class="main-nav__link burger__link_catalog" href="#">Каталог</a>
+
+              <!--каталог подменю-->
+
+              <ul class="catalog-submenu burger-submenu">
+                <li class="item">
+                  <h2 class="catalog-submenu__title">Новинки</h2>
+                </li>
+                <li class="item">
+                  <a class="catalog-submenu__link link" href="#">Сливочное</a>
+                </li>
+                <li class="item">
+                  <a class="catalog-submenu__link link" href="#">Щербеты</a>
+                </li>
+                <li class=" item">
+                  <a class="catalog-submenu__link link" href="#">Фруктовый лёд</a>
+                </li>
+                <li class="item">
+                  <a class="catalog-submenu__link link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+            <li class="burger__item item">
+              <a class="main-nav__link burger__link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="burger__item item ">
+              <a class="main-nav__link burger__link burger__link_about" href="#">О компании</a>
+            </li>
+          </ul>
+        </nav>
+
+
+        <div class="header-search">
+          <a class="header-search__link burger-search__link" href="#">
+            <svg fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826 6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601 10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234 0.00548954C4.32234 0.0707982 2.86363 0.715967 1.77757 1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002 5.91849C-0.050481 7.46228 0.478388 8.96976 1.48476 10.1398C2.49113 11.3098 3.90092 12.0563 5.43251 12.2301C6.96409 12.4039 8.50472 11.9922 9.74663 11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079 10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063 2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484 6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006 3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223 1.93838C6.0768 1.77401 6.93149 1.85837 7.70822 2.1808C8.48495 2.50324 9.14883 3.04927 9.61591 3.74983C10.083 4.4504 10.3323 5.27404 10.3323 6.11661C10.3298 7.24568 9.88115 8.3278 9.08451 9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z"
+                fill="white"></path>
+            </svg>
+          </a>
+          <div class="search-wrap_hover">
+            <label class="visually-hidden" for="burger-search__input">Форма поиска</label>
+            <input class="search-input" id="burger-search__input" placeholder="Крем-брюле" type="text">
+          </div>
+        </div>
+
+        <!-- Бургер. Пользовательская навигация -->
+
+        <ul class="user-navigation">
+          <li class="user-navigation__item item">
+            <a class="user-navigation__link hover-login-link link" href="#">
+              <svg class="user-navigation__login-icon" fill="none" height="19"
+                   viewBox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.04 14.88L12.96 9.5L6.04 4.13V7.04H0V11.96H6.04V14.88Z" fill="white"/>
+                <path d="M18 0H5C4.46957 0 3.96086 0.210714 3.58579 0.585786C3.21071 0.960859
+                            3 1.46957 3 2V4H5V2H18V17H5V15H3V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086
+                            18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391
+                            20 17.5304 20 17V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z"
+                      fill="white"/>
+              </svg>
+              Вход
+            </a>
+            <form class="login-form" method="get">
+              <label class="visually-hidden" for="burger-login-email">Поле вода имейл</label>
+              <label class="visually-hidden" for="burger-login-password">Поле вода пароля</label>
+              <input class="login-input input-email" id="burger-login-email" placeholder="email@example.com"
+                     type="email">
+              <input class="login-input
+                    input-password" id="burger-login-password" placeholder="....." type="password">
+              <div class="login-wrap">
+                <input class="login-btn main-btn" type="submit" value="Войти">
+                <ul class="login-link__wrap">
+                  <li>
+                    <a class="login-link" href="#">Забыли пароль? </a>
+                  </li>
+                  <li>
+                    <a class="login-link" href="#">Новая регистрация</a>
+                  </li>
+                </ul>
+              </div>
+            </form>
+          </li>
+          <li class="user-navigation__item item">
+            <a class="user-navigation__link empty-navigation__link link" href="#">
+              <svg class="user-navigation__basket-icon" fill="none" height="20"
+                   viewBox="0 0 21 20" width="21" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21
+                            2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z"
+                      fill="white"/>
+                <path d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16
+                            7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z"
+                      fill="white"/>
+                <path d="M16.1027 20C17.2157 20 18.118 19.1046 18.118 18C18.118 16.8954 17.2157
+                            16 16.1027 16C14.9896 16 14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896 20 16.1027 20Z"
+                      fill="white"/>
+              </svg>
+              Пусто</a>
+          </li>
+          <li class="bread-crumbs__item item">
+            <a class="bread-crumbs__link" href="index.html">Главная</a>
+            <a class="bread-crumbs__link bread-crumbs__link_catalog" href="#">Каталог</a>
+            <a class="bread-crumbs__link" href="#">Сливочное</a>
+          </li>
+        </ul>
+      </div>
 
       <!-- logo -->
 
@@ -188,7 +306,7 @@
 
   <section class="bread-crumbs__section container">
     <a class="bread-crumbs__link" href="index.html">Главная</a>
-    <a class="bread-crumbs__link" href="#">Каталог</a>
+    <a class="bread-crumbs__link bread-crumbs__link_catalog" href="#">Каталог</a>
     <a class="bread-crumbs__link" href="#">Сливочное</a>
   </section>
 
@@ -246,7 +364,7 @@
             <label class="fat-content__label" for="before 30%">до 30%</label>
           </li>
           <li class="fat-content__item  item">
-            <input class="fat-content__input disabled visually-hidden" type="radio" name="fat-radio" id="30% more">
+            <input class="fat-content__input  visually-hidden" disabled type="radio" name="fat-radio" id="30% more">
             <label class="fat-content__label" for="30% more">выше 30% </label>
           </li>
         </ul>
@@ -258,7 +376,7 @@
         <legend class="fillers__legend legend">Наполнители:</legend>
         <ul class="fillers__list">
           <li class="fillers__item item">
-            <input class="fillers__input visually-hidden" id="chocolate" name="chocolate" type="checkbox">
+            <input class="fillers__input visually-hidden"  id="chocolate" name="chocolate" type="checkbox">
             <label class="fillers__label" for="chocolate">шоколадные</label>
           </li>
           <li class="fillers__item item">
@@ -266,7 +384,7 @@
             <label class="fillers__label" for="powdered-sugar">сахарные присыпки</label>
           </li>
           <li class="fillers__item item">
-            <input class="fillers__input visually-hidden" id="fruits" name="fruits" type="checkbox">
+            <input class="fillers__input visually-hidden" disabled id="fruits" name="fruits" type="checkbox">
             <label class="fillers__label" for="fruits">фрукты</label>
           </li>
           <li class="fillers__item item">
@@ -285,6 +403,10 @@
       <button type="submit" class="sorting__button">Применить</button>
     </div>
   </section>
+
+  <div class="filter-burger__wrap">
+    <span class="filter-burger__span"></span>
+  </div>
 
   <!----------product cart---------->
 
@@ -575,5 +697,8 @@
     </div>
   </footer>
 </main>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="slick/slick-1.8.1/slick/slick.min.js"></script>
+<script src="js/catalog.js"></script>
 </body>
 </html>

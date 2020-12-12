@@ -17,8 +17,6 @@ closeModal.addEventListener("click", function (evt) {
 
 /*============ slider==========*/
 
-
-
 $('.slider__list').slick({
   dots: true,
   infinite: true,

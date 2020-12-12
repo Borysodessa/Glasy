@@ -27,6 +27,9 @@
 @import "./layout/slick.scss";
 @import "media/media";
 @import "./components/burger";
+
+/*==========catalog==========*/
+
 @import "./catalog-page/catalog-header";
 @import "./catalog-page/catalog-basket__form";
 @import "catalog-page/bread-crumbs__section";
@@ -34,3 +37,5 @@
 @import "./catalog-page/pagination";
 @import "./catalog-page/catalog-footer";
 @import "./catalog-page/catalog-card__section";
+@import "./media/catalog-media";
+@import "./catalog-page/filter-burger";

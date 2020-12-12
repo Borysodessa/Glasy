@@ -1,0 +1,70 @@
+.filter-burger__wrap{
+
+  width: 25px;
+  height: 30px;
+  top: -100px;
+  left: 20px;
+  position: absolute;
+  z-index: 100;
+}
+
+.filter-burger__span{
+  width: 8px;
+  height: 8px;
+  background-color: $color-main;
+  position: absolute;
+  border-radius: 50%;
+  top: 11px;
+}
+
+.filter-burger__span.active {
+  transform: scale(0);
+}
+
+.filter-burger__wrap::before,
+.filter-burger__wrap::after{
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: $color-main;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.filter-burger__wrap::before {
+  bottom: 0;
+}
+
+.filter-burger__wrap::after{
+  top: 0;
+}
+
+.filter-burger__wrap.active::before,
+.filter-burger__wrap.active::after{
+  width: 30px;
+  height: 3px;
+  border-radius: 0;
+}
+
+.filter-burger__wrap.active::before{
+  transform: rotate(45deg);
+  bottom: 13px;
+}
+
+.filter-burger__wrap.active::after{
+  transform: rotate(-45deg);
+  top: 14px;
+}
+
+.filter.active{
+  display: none;
+}
+
+.sorting__wrap.active{
+  display: block;
+}
+
+.filter-title.active{
+
+  top: -40px;
+}

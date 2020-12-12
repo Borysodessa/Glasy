@@ -1,0 +1,176 @@
+@media(min-width: 1155px) {
+  .filter-burger__wrap {
+    display: none;
+  }
+
+  .filter {
+    display: block;
+  }
+}
+
+
+@media(max-width: 1155px) {
+  .sorting__wrap {
+    margin: 0 auto;
+  }
+
+
+  .filter-title {
+
+    position: absolute;
+    font-size: 30px;
+    font-weight: 500;
+    transform: translate(50%);
+    right: 50%;
+    top: -50px;
+  }
+
+  .filter {
+    margin-top: 35px;
+  }
+}
+
+@media(min-width: 1023px) {
+  .filter-burger__wrap {
+    display: none;
+
+  }
+}
+
+@media(max-width: 1023px) {
+
+  .catalog-pagination__section {
+    bottom: 170px;
+    transform: translate(50%);
+    right: 50%;
+  }
+
+  .filter-title {
+    top: - 35px;
+  }
+
+  .sorting__wrap {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  .bread-crumbs__section {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .bread-crumbs__link::after {
+    display: none;
+
+  }
+
+  .burger-menu__wrap {
+    top: -400px;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .burger__wrap_left {
+    right: 20px;
+  }
+
+  .filter-title {
+    max-width: 180px;
+    top: -60px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 0.7;
+  }
+
+  .time-phone__wrap {
+    display: none;
+  }
+
+  .bread-crumbs__section {
+    display: none;
+  }
+
+  .bread-crumbs__link {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .fat-content__list {
+    min-height: 150px;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    width: 140px;
+
+  }
+
+  .fat-content__item {
+    padding-bottom: 15px;
+  }
+
+  .fillers__list {
+    min-height: 180px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-top: 15px;
+    width: 220px;
+  }
+
+  .fillers__item {
+    margin-bottom: 15px;
+
+  }
+
+  .hits__list {
+    margin-top: 70px;
+  }
+
+  .work-time {
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .filter-burger__wrap.active {
+    top: -50px
+  }
+  .sorting__wrap.active {
+    margin-top: 70px;
+  }
+
+  .sorting__s {
+    padding-bottom: 20px;
+  }
+
+  .burger-menu__wrap {
+    right: 60px;
+  }
+
+  .bread-crumbs__link_catalog{
+    display: none;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .catalog-pagination__section {
+    bottom: 220px;
+  }
+
+  .login-form{
+    left:-60px
+  }
+
+  .search-wrap_hover{
+    left:-60px;
+    width: 288px;
+  }
+
+  .search-input{
+    width: 270px;
+  }
+}
